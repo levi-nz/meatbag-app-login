@@ -41,10 +41,6 @@ when a user attempts to login. A request made from a legitimate user looks like 
 ```http request
 POST https://meatbag.app/oauth/token HTTP/2.0
 
-:method: POST
-:authority: meatbag.app
-:scheme: https
-:path: /oauth/token
 content-length: 274
 sec-ch-ua: "Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"
 accept: application/json, text/plain, */*
@@ -83,10 +79,6 @@ actually make a request like this that will still work:
 ```http request
 POST https://meatbag.app/oauth/token HTTP/2.0
 
-:method: POST
-:authority: meatbag.app
-:scheme: https
-:path: /oauth/token
 content-type: application/json
 accept: */*
 
